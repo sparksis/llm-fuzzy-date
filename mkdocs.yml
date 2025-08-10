@@ -11,3 +11,4 @@ nav:
   - 'Data Model': 'DATA_MODEL.md'
   - 'Parsing': 'PARSING.md'
   - 'Sorting': 'SORTING.md'
+  - 'Agent Instructions': 'example_agent_fragment.md'
