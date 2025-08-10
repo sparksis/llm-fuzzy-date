@@ -12,7 +12,7 @@ The following frontmatter fields are used to manage the blog's two timelines (pu
 
 *   **`date`**: The post's publication date in ISO 8601 format. This is for the standard blog timeline.
 *   **`lastmod` (optional)**: The date the post was last modified (ISO 8601).
-*   **`event_date` (custom)**: The canonical date of the event described in the post. This MUST be a valid **Extended Date/Time Format (EDTF)** string. This field is the source for the memory timeline.
+*   **`event_date` (custom)**: The canonical date of the event described in the post. This MUST be a valid **[Extended Date/Time Format (EDTF)](EDTF_SPECIFICATION.md)** string. This field is the source for the memory timeline.
     *   *Example*: A post about the 90s would have `event_date: 199X`.
     *   *Example*: A post about the summer of 1995 could have `event_date: 1995-06/1995-08`.
 *   **`event_date_start` (computed)**: The earliest possible date from `event_date` (ISO 8601). This is a system-generated field used for sorting.
