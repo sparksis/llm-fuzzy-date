@@ -18,6 +18,16 @@ The following frontmatter fields are used to manage the blog's two timelines (pu
 *   **`event_date_start` (computed)**: The earliest possible date from `event_date` (ISO 8601). This is a system-generated field used for sorting.
 *   **`event_date_end` (computed)**: The latest possible date from `event_date` (ISO 8601). This is a system-generated field used for sorting.
 
+## Common EDTF Examples
+
+To help guide the agent's output, here are some examples of natural language inputs and their corresponding EDTF strings for the `event_date` field:
+
+| Natural Language Input            | `event_date` (EDTF) | Notes                               |
+| --------------------------------- | ------------------- | ----------------------------------- |
+| "the late 80s"                    | `1987/1989`         | A conventional interpretation.      |
+| "around July 1995"                | `1995-07~?`         | Approximate and uncertain month.    |
+| "sometime before 1995"            | `[..1995]`          | Open-ended range.                   |
+
 ## Agent's Responsibility
 
 The agent is responsible for populating the `event_date` field. The system will handle the computation of `event_date_start` and `event_date_end`. The agent should use its natural language understanding capabilities to convert user queries (e.g., "the late 80s", "summer of '95") into the correct EDTF string for the `event_date` field.
