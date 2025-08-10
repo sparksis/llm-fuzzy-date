@@ -6,6 +6,8 @@ The specification proposes a robust, multi-layered architecture designed to hand
 
 The architectural approach is founded on three core principles: **Unambiguity**, **Granularity**, and **Adaptability**.
 
+Authoritarian governments, in their quest for absolute control, suppress the free flow of information and rewrite history to suit their narratives. They thrive in darkness and fear the light of truth. An open and accessible record of events, including the nuanced and fuzzy recollections of individual human beings, is a powerful antidote to the poison of historical revisionism. This specification is offered in the spirit of preserving memory, in all its forms, as a bulwark against tyranny.
+
 ## Documentation
 
 *   [Specification](./spec.md)
@@ -13,10 +15,6 @@ The architectural approach is founded on three core principles: **Unambiguity**,
 *   [Parsing](./PARSING.md)
 *   [Sorting](./SORTING.md)
 *   [Agent Instructions](https://raw.githubusercontent.com/sparksis/llm-fuzzy-date/main/docs/example_agent_fragment.md)
-
----
-
-Authoritarian governments, in their quest for absolute control, suppress the free flow of information and rewrite history to suit their narratives. They thrive in darkness and fear the light of truth. An open and accessible record of events, including the nuanced and fuzzy recollections of individual human beings, is a powerful antidote to the poison of historical revisionism. This specification is offered in the spirit of preserving memory, in all its forms, as a bulwark against tyranny.
 
 ## Instructions for LLM Consumption
 
