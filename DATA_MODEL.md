@@ -39,3 +39,28 @@ The core data structure is defined as follows:
 | `granularity`      | `Enum`              | The precision of the original user input.                                      | `YYYY`, `YYYY-MM`, `YYYY-MM-DD`                                         |
 | `confidence_score` | `Float (0-1)`       | A numerical representation of the system's certainty.                          | `0.9` (High confidence), `0.6` (Low confidence)                       |
 | `original_input`   | `Text`              | The raw user-provided string for future re-evaluation.                         | `"I think it was around July 1995"`                                   |
+
+## Blog-Specific Frontmatter for Temporal Context
+
+The specification is designed for a blog where a post's publication date and the date of a specific memory or event can be different. To accommodate this, the system will use a standardized frontmatter schema. This schema ensures a clear separation between a blog post's metadata and the temporal data of the event it describes, which is crucial for building a canonical timeline.
+
+Blog platforms like Jekyll and Hugo use frontmatter to store metadata such as date and title. The proposed schema extends this with a custom field to store the canonical EDTF date.
+
+The proposed frontmatter properties are:
+
+- **`date`**: This standard property represents the blog post's publication date. It's a precise ISO 8601 string and should be used by the blog engine for its own purposes.
+- **`lastmod` (optional)**: This field can be used to track the date a post was last modified.
+- **`event_date` (custom)**: This is the core property for the memory-based timeline. This custom variable will store the canonical EDTF string that represents the event being described in the post.
+- **`event_date_start` (computed)**: A hidden or system-generated field that stores the earliest possible date from `event_date` as a standard ISO 8601 date. This field is used as a primary key for sorting the canonical timeline.
+- **`event_date_end` (computed)**: A hidden or system-generated field that stores the latest possible date from `event_date` as a standard ISO 8601 date. This field is used as a secondary key for sorting.
+
+Here is an example of a blog post's frontmatter using the YAML format:
+
+```yaml
+---
+title: "The Summer I Worked at the Video Store"
+date: 2024-04-15T10:30:00-07:00
+lastmod: 2024-04-15T10:30:00-07:00
+event_date: 1995-06-XX/1995-08-XX
+---
+```

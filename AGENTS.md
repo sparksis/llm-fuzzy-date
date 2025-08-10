@@ -4,6 +4,19 @@
 
 **Canonical Format**: All temporal data is represented as an Extended Date/Time Format (EDTF) string, an ISO 8601-2 compliant format.
 
+### Core Data Fields
+- **canonical_date**: The EDTF string representation of the event.
+- **sort_start_date**: The earliest possible date of the event (ISO 8601).
+- **sort_end_date**: The latest possible date of the event (ISO 8601).
+- **granularity**: The precision of the original input (e.g., `YYYY`, `YYYY-MM-DD`).
+- **confidence_score**: The system's confidence in the parsed date (0-1).
+- **original_input**: The raw user-provided string.
+
+### Frontmatter Properties for Blog Posts
+- **date**: Post publication date (ISO 8601).
+- **lastmod**: Post last modified date (ISO 8601).
+- **event_date**: Canonical date of the event described in the post (EDTF).
+
 ### Format Examples
 - **Year**: `YYYY` (e.g., `1995`)
 - **Month**: `YYYY-MM` (e.g., `1995-07`)
