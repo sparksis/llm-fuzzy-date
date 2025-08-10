@@ -1,0 +1,14 @@
+site_name: Temporal Data Management Specification
+theme:
+  name: material
+  palette:
+    primary: green
+    accent: light green
+repo_url: https://github.com/sparksis/llm-fuzzy-date
+nav:
+  - 'Home': 'index.md'
+  - 'Specification': 'spec.md'
+  - 'Data Model': 'DATA_MODEL.md'
+  - 'Parsing': 'PARSING.md'
+  - 'Sorting': 'SORTING.md'
+  - 'Agent Instructions': 'example_agent_fragment.md'
