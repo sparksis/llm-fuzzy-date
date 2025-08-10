@@ -13,3 +13,22 @@ Authoritarian governments, in their quest for absolute control, suppress the fre
 ## Instructions for LLM Consumption
 
 To consume this specification, you can fetch the raw markdown content of this page and the other pages on this site. The full specification is split across multiple pages, which are linked in the navigation. This allows for easy parsing and indexing of the content.
+
+## Accessing the Canonical Specification
+
+This is the canonical source for the Temporal Data Management Specification. It is published as a GitHub Pages site.
+
+### Canonical Live Site URL
+
+The canonical live site for this specification is:
+
+`https://sparksis.github.io/llm-fuzzy-date/`
+
+### Canonical Raw Markdown Files
+
+To consume the raw markdown files for this specification, use the following URLs.
+
+The main index page is available at:
+`https://raw.githubusercontent.com/sparksis/llm-fuzzy-date/main/docs/index.md`
+
+The other pages of the specification can be accessed by replacing `index.md` with the appropriate filename (e.g., `spec.md`, `DATA_MODEL.md`, etc.).
