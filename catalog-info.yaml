@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: llm-fuzzy-date
-  description: "The `llm-fuzzy-date` project introduces a technical specification for a blog feature designed to robustly record, represent, and sort temporal data, including absolute, fuzzy, and date ranges, to accurately reflect the imprecise nature of human memory."
+  description: "This project, named `llm-fuzzy-date`, provides a technical specification for a blog feature that records, represents, and sorts temporal data, handling both absolute and fuzzy dates to accurately reflect human memory through a multi-layered architecture focused on unambiguity, granularity, and adaptability."
   annotations:
     github.com/project-slug: sparksis/llm-fuzzy-date
 spec:
